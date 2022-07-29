@@ -23,29 +23,60 @@ fileset = {
 }
 
 signals = {
-     'HNL_testpoint1': [
-         '/eos/uscms/store/user/kkwok/llp/HNL/HeavyNeutralLepton_Tree.root',
-     ],
-     "HNL_electronType_mHNL1p0_pl10"     :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/HNL_electronType_mHNL1p0_pl10/HeavyNeutralLepton_Tree_*.root"),
-     "HNL_electronType_mHNL1p0_pl100"    :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/HNL_electronType_mHNL1p0_pl100/HeavyNeutralLepton_Tree_*.root"),
-     "HNL_electronType_mHNL1p0_pl1000"   :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/HNL_electronType_mHNL1p0_pl1000/HeavyNeutralLepton_Tree_*.root"),
-     "HNL_electronType_mHNL2p0_pl10"     :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/HNL_electronType_mHNL2p0_pl10/HeavyNeutralLepton_Tree_*.root"),
-     "HNL_electronType_mHNL2p0_pl100"    :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/HNL_electronType_mHNL2p0_pl100/HeavyNeutralLepton_Tree_*.root"),
-     "HNL_electronType_mHNL2p0_pl1000"   :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/HNL_electronType_mHNL2p0_pl1000/HeavyNeutralLepton_Tree_*.root"),
-     "HNL_electronType_mHNL4p0_pl10"     :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/HNL_electronType_mHNL4p0_pl10/HeavyNeutralLepton_Tree_*.root"),
-     "HNL_electronType_mHNL4p0_pl100"    :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/HNL_electronType_mHNL4p0_pl100/HeavyNeutralLepton_Tree_*.root"),
-     "HNL_electronType_mHNL4p0_pl1000"   :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/HNL_electronType_mHNL4p0_pl1000/HeavyNeutralLepton_Tree_*.root"),
-     "HNL_electronType_mHNL7p0_pl100"    :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/HNL_electronType_mHNL7p0_pl100/HeavyNeutralLepton_Tree_*.root"),
-     "HNL_electronType_mHNL7p0_pl1000"   :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/HNL_electronType_mHNL7p0_pl1000/HeavyNeutralLepton_Tree_*.root"),
-     "HNL_electronType_mHNL7p0_pl10000"  :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/HNL_electronType_mHNL7p0_pl10000/HeavyNeutralLepton_Tree_*.root"),
-     "HNL_electronType_mHNL10p0_pl100"   :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/HNL_electronType_mHNL10p0_pl100/HeavyNeutralLepton_Tree_*.root"),
-     "HNL_electronType_mHNL10p0_pl1000"  :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/HNL_electronType_mHNL10p0_pl1000/HeavyNeutralLepton_Tree_*.root"),
-     "HNL_electronType_mHNL10p0_pl10000":glob.glob("/eos/uscms/store/user/lpclonglived/HNL/HNL_electronType_mHNL10p0_pl10000/HeavyNeutralLepton_Tree_*.root"),
-       
-     #'WJetsToLNu_TuneCP5_13TeV-madgraphMLM-pythia8':glob.glob("/eos/uscms/store/user/kkwok/llp/WJetsToLNu/HeavyNeutralLepton_Tree_*.root")       , 
-     # 'EGamma_2018A': glob.glob("/eos/uscms/store/user/lpclonglived/HNL/EGamma_2018A/HeavyNeutralLepton_Tree_*.root"),
+     #'HNL_testpoint1': [
+     #    '/eos/uscms/store/user/kkwok/llp/HNL/HeavyNeutralLepton_Tree.root',
+     #],
+     "HNL_electronType_mHNL1p0_pl10"     :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/skim/HNL_electronType_mHNL1p0_pl10/HeavyNeutralLepton_Tree.root"),
+     "HNL_electronType_mHNL1p0_pl100"    :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/skim/HNL_electronType_mHNL1p0_pl100/HeavyNeutralLepton_Tree.root"),
+     "HNL_electronType_mHNL1p0_pl1000"   :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/skim/HNL_electronType_mHNL1p0_pl1000/HeavyNeutralLepton_Tree.root"),
+     "HNL_electronType_mHNL2p0_pl10"     :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/skim/HNL_electronType_mHNL2p0_pl10/HeavyNeutralLepton_Tree.root"),
+     "HNL_electronType_mHNL2p0_pl10_rwctau4"     :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/skim/HNL_electronType_mHNL2p0_pl10/HeavyNeutralLepton_Tree.root"),
+     ##"HNL_electronType_mHNL2p0_pl100"    :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/skim/HNL_electronType_mHNL2p0_pl100/HeavyNeutralLepton_Tree.root"),
+     "HNL_electronType_mHNL2p0_pl1000"   :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/skim/HNL_electronType_mHNL2p0_pl1000/HeavyNeutralLepton_Tree.root"),
+     "HNL_electronType_mHNL2p0_pl1000_rwctau10000"   :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/skim/HNL_electronType_mHNL2p0_pl1000/HeavyNeutralLepton_Tree.root"),
+     "HNL_electronType_mHNL4p0_pl10"     :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/skim/HNL_electronType_mHNL4p0_pl10/HeavyNeutralLepton_Tree.root"),
+     "HNL_electronType_mHNL4p0_pl10_rwctau40"     :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/skim/HNL_electronType_mHNL4p0_pl10/HeavyNeutralLepton_Tree.root"),
+     ##"HNL_electronType_mHNL4p0_pl100"    :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/skim/HNL_electronType_mHNL4p0_pl100/HeavyNeutralLepton_Tree.root"),
+     "HNL_electronType_mHNL4p0_pl1000"   :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/skim/HNL_electronType_mHNL4p0_pl1000/HeavyNeutralLepton_Tree.root"),
+     "HNL_electronType_mHNL4p0_pl1000_rwctau2000"   :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/skim/HNL_electronType_mHNL4p0_pl1000/HeavyNeutralLepton_Tree.root"),
+     ##"HNL_electronType_mHNL7p0_pl100"    :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/skim/HNL_electronType_mHNL7p0_pl100/HeavyNeutralLepton_Tree.root"),
+     #"HNL_electronType_mHNL7p0_pl1000"   :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/skim/HNL_electronType_mHNL7p0_pl1000/HeavyNeutralLepton_Tree.root"),
+     ##"HNL_electronType_mHNL7p0_pl10000"  :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/skim/HNL_electronType_mHNL7p0_pl10000/HeavyNeutralLepton_Tree.root"),
+     ##"HNL_electronType_mHNL10p0_pl100"   :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/skim/HNL_electronType_mHNL10p0_pl100/HeavyNeutralLepton_Tree.root"),
+     #"HNL_electronType_mHNL10p0_pl1000"  :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/skim/HNL_electronType_mHNL10p0_pl1000/HeavyNeutralLepton_Tree.root"),
+     #"HNL_electronType_mHNL10p0_pl10000":glob.glob("/eos/uscms/store/user/lpclonglived/HNL/skim/HNL_electronType_mHNL10p0_pl10000/HeavyNeutralLepton_Tree.root"),
+     ##  
+     'WJetsToLNu_TuneCP5_13TeV-madgraphMLM-pythia8':glob.glob("/eos/uscms/store/user/lpclonglived/HNL/skim/WJetsToLNu/HeavyNeutralLepton_Tree.root")       , 
+     'EGamma_2018A': glob.glob("/eos/uscms/store/user/lpclonglived/HNL/skim/EGamma_2018A/HeavyNeutralLepton_Tree_*.root"),
+     'EGamma_2018B': glob.glob("/eos/uscms/store/user/lpclonglived/HNL/skim/EGamma_2018B/HeavyNeutralLepton_Tree_*.root"),
+     'EGamma_2018C': glob.glob("/eos/uscms/store/user/lpclonglived/HNL/skim/EGamma_2018C/HeavyNeutralLepton_Tree_*.root"),
+     'EGamma_2018D': glob.glob("/eos/uscms/store/user/lpclonglived/HNL/skim/EGamma_2018D/HeavyNeutralLepton_Tree_*.root"),
 }
+signals_muon = {
+      "HNL_muonType_mHNL1p0_pl10"     :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/skim/HNL_muonType_mHNL1p0_pl10/HeavyNeutralLepton_Tree_*.root"),
+     "HNL_muonType_mHNL1p0_pl100"    :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/skim/HNL_muonType_mHNL1p0_pl100/HeavyNeutralLepton_Tree_*.root"),
+     "HNL_muonType_mHNL1p0_pl1000"   :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/skim/HNL_muonType_mHNL1p0_pl1000/HeavyNeutralLepton_Tree_*.root"),
+     "HNL_muonType_mHNL2p0_pl10"     :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/skim/HNL_muonType_mHNL2p0_pl10/HeavyNeutralLepton_Tree_*.root"),
+     "HNL_muonType_mHNL2p0_pl100"    :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/skim/HNL_muonType_mHNL2p0_pl100/HeavyNeutralLepton_Tree_*.root"),
+     "HNL_muonType_mHNL2p0_pl1000"   :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/skim/HNL_muonType_mHNL2p0_pl1000/HeavyNeutralLepton_Tree_*.root"),
+     "HNL_muonType_mHNL4p0_pl10"     :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/skim/HNL_muonType_mHNL4p0_pl10/HeavyNeutralLepton_Tree_*.root"),
+     "HNL_muonType_mHNL4p0_pl100"    :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/skim/HNL_muonType_mHNL4p0_pl100/HeavyNeutralLepton_Tree_*.root"),
+     "HNL_muonType_mHNL4p0_pl1000"   :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/skim/HNL_muonType_mHNL4p0_pl1000/HeavyNeutralLepton_Tree_*.root"),
+     "HNL_muonType_mHNL7p0_pl100"    :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/skim/HNL_muonType_mHNL7p0_pl100/HeavyNeutralLepton_Tree_*.root"),
+     "HNL_muonType_mHNL7p0_pl1000"   :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/skim/HNL_muonType_mHNL7p0_pl1000/HeavyNeutralLepton_Tree_*.root"),
+     "HNL_muonType_mHNL7p0_pl10000"  :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/skim/HNL_muonType_mHNL7p0_pl10000/HeavyNeutralLepton_Tree_*.root"),
+     "HNL_muonType_mHNL10p0_pl100"   :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/skim/HNL_muonType_mHNL10p0_pl100/HeavyNeutralLepton_Tree_*.root"),
+     "HNL_muonType_mHNL10p0_pl1000"  :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/skim/HNL_muonType_mHNL10p0_pl1000/HeavyNeutralLepton_Tree_*.root"),
+     "HNL_muonType_mHNL10p0_pl10000":glob.glob("/eos/uscms/store/user/lpclonglived/HNL/skim/HNL_muonType_mHNL10p0_pl10000/HeavyNeutralLepton_Tree_*.root"),
 
+}
+data_muon = {
+     'Muon_2018D': glob.glob("/eos/uscms/store/user/lpclonglived/HNL/skim/SingleMuon_2018D/HeavyNeutralLepton_Tree_*.root"),
+
+}
+test = {
+     "HNL_electronType_mHNL2p0_pl100"    :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/skim/HNL_electronType_mHNL2p0_pl100/HeavyNeutralLepton_Tree_1.root"),
+}
 
 signals_muon = {
 " HNL_muonType_mHNL1p0_pl10"     :glob.glob("/eos/uscms/store/user/lpclonglived/HNL/skim/HNL_muonType_mHNL1p0_pl10/HeavyNeutralLepton_Tree_*.root"),
