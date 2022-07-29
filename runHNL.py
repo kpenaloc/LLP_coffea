@@ -90,10 +90,6 @@ if __name__ == '__main__':
     parser = OptionParser()
     parser.add_option('--test', dest='test', action='store_true',default = False, help='Run local test with small fileset')
     parser.add_option('--local', dest='local', action='store_true',default = False, help='Run local test with 1 chunk of full fileset')
-<<<<<<< HEAD
-    parser.add_option('--condor', dest='condor', action='store_true',default = False, help='Run on condor with full fileset')
-
-=======
     parser.add_option('--condor', dest='condor', action='store_true',default = False, help='Run local test with 1 chunk of full fileset')
     parser.add_option('--muon', dest='muon', action='store_true',default = False, help='Run muon channel')
     parser.add_option('--full', dest='full', action='store_true',default = False, help='Run full file chunks')
@@ -101,20 +97,11 @@ if __name__ == '__main__':
     parser.add_option('--debug', dest='debug', action='store_true',default = False, help='run with debug')
     parser.add_option('--fileset', dest='fileset', default = "test.json", help='input file json')
     parser.add_option('--nJobs', dest='nJobs', default = 4, type=int, help='number of workers in condor')
->>>>>>> 8813f494aba789a5b54d97be79fdd1ba2e6ed2ea
     parser.add_option('-o', dest='outf', default='HNL_histograms.pickle', help='collection of histograms')
     parser.add_option('-f', dest='inf', default='signals_skim.json' , help='Input fileset')   
 
 
     (options, args) = parser.parse_args()
-<<<<<<< HEAD
-    #outf    = "HNL_histograms_all_Sep30.pickle"
-    #fileset = "signals_skim.json"
-    outf = options.outf
-    fileset = options.inf
-    print("Input fileset: ",fileset)
-    
-=======
     outf    = options.outf 
     saveSkim    = options.saveSkim
     fileset = options.fileset
@@ -124,7 +111,6 @@ if __name__ == '__main__':
     print(" isElectronChannel = ", isElectronChannel)
     print(" outf              = ", outf)
     print(" saveSkim          = ", saveSkim)
->>>>>>> 8813f494aba789a5b54d97be79fdd1ba2e6ed2ea
 
     if options.test:
         runLocal("test.pickle","test.json",isElectronChannel)
@@ -132,10 +118,7 @@ if __name__ == '__main__':
         print("full               = ", options.full)
         runLocal(outf,fileset,isElectronChannel,options.full,saveSkim,options.debug)
     elif options.condor:
-<<<<<<< HEAD
-        runLPC(outf,fileset)
-    print("Written output to:",outf)
-=======
+        #runLPC(outf,fileset)
+    #print("Written output to:",outf)
         print(" Using nJobs       = ", options.nJobs)
         runLPC(outf,fileset,isElectronChannel,options.nJobs,saveSkim)
->>>>>>> 8813f494aba789a5b54d97be79fdd1ba2e6ed2ea
